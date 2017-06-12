@@ -24,6 +24,7 @@ include $base_dir.'src'.$ds.'calculator.php';
           <?php
             $cal = new calculator();
             echo "Result: ".$cal->summe(2,3);
+            echo "Result: ".$cal->summe(4,5);
           ?>
     </p>
     </div>
