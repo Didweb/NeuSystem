@@ -19,7 +19,7 @@ include $base_dir.'src'.$ds.'calculator.php';
   <body>
     <div class="container">
           <div class="starter-template">
-        <h1>Calculator Con un cambio realizado.</h1>
+        <h1>Calculator Con un cambio realizado. xxxxxx</h1>
     <p>
           <?php
             $cal = new calculator();
