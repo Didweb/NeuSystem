@@ -11,7 +11,7 @@
       */
      public function testDobleFallo2()
      {
-         $this->assertEquals(6, 6);
+         $this->assertEquals(6, 6); 
      }
 
 }
