@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit colors="true">
-	<testsuite name="NeuSystem">
-		<directory>./</directory>
+	<testsuite name="NeuSystem_ 1">
+		<directory>./*Test.php</directory>
 	</testsuite>
 </phpunit>
