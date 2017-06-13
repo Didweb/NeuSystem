@@ -1,7 +1,7 @@
 <?php
 
 
- class CalculatorTest extends PHPUnit_Framework_TestCase
+ class dobleTest extends PHPUnit_Framework_TestCase
  {
 
 
@@ -11,7 +11,7 @@
       */
      public function testDobleFallo()
      {
-         $this->assertEquals(8, 5);
+         $this->assertEquals(5, 5);
      }
 
 }

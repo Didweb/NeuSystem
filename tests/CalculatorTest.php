@@ -16,7 +16,7 @@
       */
      public function testSummer()
      {
-         $this->assertEquals(8, $this->cal->summe(2, 2));
+         $this->assertEquals(4, $this->cal->summe(2, 2));
      }
 
 }
