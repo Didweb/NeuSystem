@@ -20,7 +20,7 @@ include $base_dir.'src'.$ds.'calculator.php';
     <div class="container">
           <div class="starter-template">
         <h1>Calculator Con un cambio realizado. xxxxxx yyyyy</h1>
-    <p>
+    <p>Texto nuevo probando
           <?php
             $cal = new calculator();
             echo "Result: ".$cal->summe(2,3);
