@@ -1,6 +1,7 @@
 {
     "require-dev": {
         "phpdocumentor/phpdocumentor": "2.*",
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "*",
+        "phing/phing": "2.*"
     }
 }
