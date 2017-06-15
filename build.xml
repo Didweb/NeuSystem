@@ -28,7 +28,10 @@
 
       <formatter type="xml" todir="report" outfile="logfile.xml"/>
    </phpunit>
-
+   <phpunitreport infile="report/logfile.xml"
+                     styledir="/vendor/phing/etc"
+                     format="frames"
+                     todir="report"/>
   </target>
   <target name="build" depends="prepare,clean,report"/>
 </project>

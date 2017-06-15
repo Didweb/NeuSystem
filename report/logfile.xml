@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="AllTests" tests="3" assertions="3" failures="0" errors="0" time="0.005273">
-    <testsuite name="CalculatorTest" file="C:\xampp\htdocs\NeuSystem\tests\CalculatorTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004729">
-      <testcase name="testSummer" class="CalculatorTest" file="C:\xampp\htdocs\NeuSystem\tests\CalculatorTest.php" line="17" assertions="1" time="0.004729"/>
+  <testsuite name="AllTests" tests="3" assertions="3" failures="0" errors="0" time="0.005405">
+    <testsuite name="CalculatorTest" file="C:\xampp\htdocs\NeuSystem\tests\CalculatorTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004930">
+      <testcase name="testSummer" class="CalculatorTest" file="C:\xampp\htdocs\NeuSystem\tests\CalculatorTest.php" line="17" assertions="1" time="0.004930"/>
     </testsuite>
-    <testsuite name="dobleTest" file="C:\xampp\htdocs\NeuSystem\tests\dobleTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.000239">
-      <testcase name="testDobleFallo" class="dobleTest" file="C:\xampp\htdocs\NeuSystem\tests\dobleTest.php" line="12" assertions="1" time="0.000239"/>
+    <testsuite name="dobleTest" file="C:\xampp\htdocs\NeuSystem\tests\dobleTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.000249">
+      <testcase name="testDobleFallo" class="dobleTest" file="C:\xampp\htdocs\NeuSystem\tests\dobleTest.php" line="12" assertions="1" time="0.000249"/>
     </testsuite>
-    <testsuite name="nivelTest" file="C:\xampp\htdocs\NeuSystem\tests\test_2\nivelTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.000305">
-      <testcase name="testDobleFallo2" class="nivelTest" file="C:\xampp\htdocs\NeuSystem\tests\test_2\nivelTest.php" line="12" assertions="1" time="0.000305"/>
+    <testsuite name="nivelTest" file="C:\xampp\htdocs\NeuSystem\tests\test_2\nivelTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.000226">
+      <testcase name="testDobleFallo2" class="nivelTest" file="C:\xampp\htdocs\NeuSystem\tests\test_2\nivelTest.php" line="12" assertions="1" time="0.000226"/>
     </testsuite>
   </testsuite>
 </testsuites>
