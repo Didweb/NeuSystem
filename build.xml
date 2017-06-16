@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<project name="MyApplication" default="build">
+  <property name="package" value="MyApplication" override="true" />
+
+
+  <target name="prepare">
+     <mkdir dir="report"/>
+   </target>
+
+   <target name="clean">
+     <delete dir="report"/>
+   </target>
+
+  <target name="report" depends="prepare">
+    <phpunit printsummary="true" haltonfailure="true" >
+
+      <batchtest>
+        <fileset dir="./tests">
+          <include name="*Test.php"/>
+        </fileset>
+      </batchtest>
+
+      <batchtest>
+        <fileset dir="./tests/test_2">
+          <include name="*Test.php"/>
+        </fileset>
+      </batchtest>
+
+      <formatter type="xml" todir="report" outfile="logfile.xml"/>
+   </phpunit>
+   </target>
+
+   <target name="main" description="==>Git tasks UTs">
+
+ 	</target>
+
+<target name="mygit" depends="prepare">
+
+  <property name="repo.dir" value="copyReport" />
+                  <resolvepath propertyName="repo.dir.resolved" file="${repo.dir}" />
+
+               <!-- clone repository -->
+               <gitclone
+               repository="https://github.com/Didweb/NeuSystem.git"
+               targetPath="${repo.dir.resolved}" />
+
+        </target>
+
+  <target name="build" depends="prepare,clean,report,main,mygit"/>
+</project>
