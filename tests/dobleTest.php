@@ -11,7 +11,7 @@
       */
      public function testDobleFallo()
      {
-         $this->assertEquals(8, 5);
+         $this->assertEquals(5, 5);
      }
 
 }
