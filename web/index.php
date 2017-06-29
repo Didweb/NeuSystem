@@ -19,13 +19,9 @@ include $base_dir.'src'.$ds.'calculator.php';
   <body>
     <div class="container">
           <div class="starter-template">
-<<<<<<< HEAD
-        <h1>Calculator</h1>
+
+        <h1>Calculator NUEVO TITLO</h1>
     <p>CALCULADORA funcionando <br><br>
-=======
-        <h1>Calculator 2</h1>
-    <p>Calucladora funcionando <br><br>
->>>>>>> 7502209721bbeb6842ea65a2b1e99952453754ed
           <?php
             $cal = new calculator();
             echo " 2 + 3 = ".$cal->summe(2,3);
