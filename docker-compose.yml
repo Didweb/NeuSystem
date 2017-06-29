@@ -2,11 +2,25 @@ code-volume2:
   image: debian
   volumes:
     - .:/var/www/html
+  ports:
+    - "8090:80"
+  command: bash
+
+
+data-volume2:
+  image: debian
+  volumes:
+    - /bds:/var/lib/mysql
+  ports:
+    - "8080:80"
+  command: bash
+
 
 web:
-  image: pinuaga/debian_9_apache
+  image: webdevops/php-apache-dev
   command: php -S 0.0.0.0:8000 -t /var/www/html
+
   ports:
-    - "8000:80"
+    - "8000:8000"
   volumes_from:
     - code-volume2

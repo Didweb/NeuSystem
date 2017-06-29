@@ -13,18 +13,18 @@ include $base_dir.'src'.$ds.'calculator.php';
     <title>Calculator</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="./web/css/bootstrap.min.css" rel="stylesheet">
 
   </head>
   <body>
     <div class="container">
           <div class="starter-template">
-        <h1>Calculator Con un cambio realizado. TODO OK MAS OK OK OK XXXXXXX</h1>
-    <p>Texto nuevo probando
+        <h1>Calculator</h1>
+    <p>Calucladora funcionando <br><br>
           <?php
             $cal = new calculator();
-            echo "Result: ".$cal->summe(2,3);
-            echo "Result: ".$cal->summe(4,5);
+            echo " 2 + 3 = ".$cal->summe(2,3);
+            echo " <br> 4 + 5 = ".$cal->summe(4,5);
           ?>
     </p>
     </div>
@@ -32,6 +32,6 @@ include $base_dir.'src'.$ds.'calculator.php';
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="./web/js/bootstrap.min.js"></script>
   </body>
 </html>
