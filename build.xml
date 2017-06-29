@@ -28,7 +28,29 @@
 
       <formatter type="xml" todir="report" outfile="logfile.xml"/>
    </phpunit>
+<<<<<<< HEAD
+   </target>
+
+   <target name="main" description="==>Git tasks UTs">
+
+ 	</target>
+
+<target name="mygit" depends="prepare">
+
+  <property name="repo.dir" value="copyReport" />
+                  <resolvepath propertyName="repo.dir.resolved" file="${repo.dir}" />
+
+               <!-- clone repository -->
+               <gitclone
+               repository="https://github.com/Didweb/NeuSystem.git"
+               targetPath="${repo.dir.resolved}" />
+
+        </target>
+
+  <target name="build" depends="prepare,clean,report,main,mygit"/>
+=======
   
   </target>
   <target name="build" depends="prepare,clean,report"/>
+>>>>>>> dev
 </project>
