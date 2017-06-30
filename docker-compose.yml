@@ -7,9 +7,6 @@ code-volume2:
   command: bash
 
 
-
-
-
 web:
   image: webdevops/php-apache-dev
   command: php -S 0.0.0.0:8000 -t /var/www/html
