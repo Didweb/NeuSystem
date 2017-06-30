@@ -7,13 +7,7 @@ code-volume2:
   command: bash
 
 
-data-volume2:
-  image: debian
-  volumes:
-    - /bds:/var/lib/mysql
-  ports:
-    - "8080:80"
-  command: bash
+
 
 
 web:
