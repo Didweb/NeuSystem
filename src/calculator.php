@@ -1,22 +1,11 @@
 <?php
-
-
 /**
-* Eduardo Pinuaga Linares
-*
-* eduardo.pinuaga-linares@elementsystems.de
-*
-* test PHPDocumentator
-*
-*
-* @author Eduardo Pinuaga Linares
-* @author http://www.elementsystems.de
+* @author Eduardo Pinuaga Linares <eduardo.pinuaga-linares@elementsystems.de>
 *
 * @package calculator
+*
 */
 class calculator {
-
-
 
   /**
   * Summe zwei parametere.
@@ -30,7 +19,17 @@ class calculator {
     return $r;
   }
 
-
+  /**
+  * Rest zwei parametere.
+  *
+  * @return integer rest a + b
+  * @param integer $a nummer
+  * @param integer $b nummer
+  */
+  public function rest($a, $b){
+    $r = $a + $b;
+    return $r;
+  }
 }
 
  ?>
