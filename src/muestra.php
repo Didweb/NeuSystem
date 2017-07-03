@@ -18,6 +18,15 @@ class muestra {
     return $result;
   }
 
-
+  /**
+  * Probe die texte mit h2.
+  *
+  * @return string text mit h2
+  * @param string $text text
+  */
+  public function muestra_h2($text){
+    $result = "<h2>".$text."</h2>";
+    return $result;
+  }
 
  ?>
