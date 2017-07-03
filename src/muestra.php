@@ -25,7 +25,7 @@ class muestra {
   * @param string $text text
   */
   public function muestra_h2($text){
-    $result = "<h2>".$text."</h2>";
+    $result = "<h2>".$text."</h2> ffffffffffffffff";
     return $result;
   }
 
