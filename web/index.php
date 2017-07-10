@@ -20,13 +20,55 @@ include $base_dir.'src'.$ds.'calculator.php';
     <div class="container">
           <div class="starter-template">
 
-        <h1>MY CALCULADORA</h1>
+        <h1>MY CALCULADORA xxxx</h1>
     <p>CALCULADORA funcionando <br><br>
           <?php
             $cal = new calculator();
             echo " 2 + 3 = ".$cal->summe(2,3);
             echo " <br> 4 + 5 = ".$cal->summe(4,5);
           ?>
+
+
+<?php
+
+$mysqli = new mysqli("192.168.99.100", "root", "pass", "prueba");
+if ($mysqli->connect_errno) {
+    echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+}
+
+
+echo "<br>".$mysqli->host_info . "\n";
+
+
+$sql = "SELECT * FROM personas  ";
+if (!$resultado = $mysqli->query($sql)) {
+    // ¡Oh, no! La consulta falló.
+    echo "Lo sentimos, este sitio web está experimentando problemas.";
+
+    // De nuevo, no hacer esto en un sitio público, aunque nosotros mostraremos
+    // cómo obtener información del error
+    echo "Error: La ejecución de la consulta falló debido a: \n";
+    echo "Query: " . $sql . "\n";
+    echo "Errno: " . $mysqli->errno . "\n";
+    echo "Error: " . $mysqli->error . "\n";
+    exit;
+}
+
+
+echo "<ul>\n";
+while ($persona = $resultado->fetch_assoc()) {
+    echo "<li>";
+    echo $persona['id'] . ' ' . $persona['name'];
+    echo "</li>\n";
+}
+echo "</ul>\n";
+
+$resultado->free();
+$mysqli->close();
+?>
+
+
+
     </p>
     </div>
 </div>

@@ -1,16 +1,43 @@
-code-volume2:
-  image: debian
-  volumes:
-    - .:/var/www/html
-  ports:
-    - "8090:80"
-  command: bash
+version: '2'
+services:
+  mysql:
+    build: ./constructor/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+    ports:
+      - "3306:3306"
 
-web:
-  image: webdevops/php-apache-dev
-  command: php -S 0.0.0.0:8000 -t /var/www/html
+  php:
+    build: ./constructor/php56
+    ports:
+      - '80:80'
+    volumes_from:
+      - data
+    depends_on:
+      - mysql
 
-  ports:
-    - "8000:8000"
-  volumes_from:
-    - code-volume2
+  data:
+    image: busybox
+    container_name: data
+    volumes:
+      - .:/var/www/html
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      MYSQL_USERNAME: root
+      MYSQL_ROOT_PASSWORD: pass
+    restart: always
+    ports:
+     - 8100:80
+    depends_on:
+      - mysql
+
+volumes:
+  data:
+
+networks:
+    front:
+        driver: bridge
